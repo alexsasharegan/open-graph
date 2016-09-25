@@ -1,0 +1,30 @@
+{
+	"name": "alexsasharegan/open-graph",
+	"type": "library",
+	"description": "A simple, scriptable way to create Open Graph meta tags.",
+	"keywords": [
+		"open graph",
+		"open",
+		"graph",
+		"open-graph",
+		"opengraph",
+		"seo",
+		"meta"
+	],
+	"homepage": "https://github.com/alexsasharegan/open-graph",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Alex Regan",
+			"email": "alex.joseph.regan@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=5.3.0"
+	},
+	"autoload": {
+		"files": [
+			"OpenGraph.php"
+		]
+	}
+}

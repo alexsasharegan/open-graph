@@ -7,18 +7,21 @@
 ```php
 <?php
 
-$og = new OpenGraph();
-$og->setUrl('http://canonicalurl.com');
-$og->setDeterminer('The');
-$og->setTitle('University of Awesome');
-$og->setSiteName('University of Awesome');
-$og->setType('website');
-$og->setDescription('This awesome university will take you to school.');
-$og->setVideo('https://www.youtube.com/watch?v=videolink');
-$og->setImage('http://canonicalurl.com/images/brand.jpg');
-$og->setLocale('en_US');
+$og = new OpenGraph;
+$og->setUrl('http://canonicalurl.com')
+   ->setDeterminer('The')
+   ->setTitle('University of Awesome')
+   ->setSiteName('University of Awesome')
+   ->setType('website')
+   ->setDescription('This awesome university will take you to school.')
+   ->setVideo('https://www.youtube.com/watch?v=videolink')
+   ->setImage('http://canonicalurl.com/images/brand.jpg')
+   ->setLocale('en_US');
 
-echo $og;
+echo $og; 
+// alternatively
+$og->render();
+
 /*
 <meta property="og:title" content="University of Awesome">
 <meta property="og:type" content="website">
