@@ -333,9 +333,9 @@ class OpenGraph {
 		if ( ! empty($this->$propName) )
 		{
 			$prop = $this->{'get' . ucfirst( $propName )}();
-			$key  = array_shift( array_keys( $prop ) );
+			$key  = array_keys($prop)[0];
 			
-			return "<meta property=\"{$key}\" content=\"{$prop[$key]}\" />";
+			return sprintf( '<meta property="%s" content="%s" />', $key, $prop[ $key ] );
 		}
 		
 		return '';
